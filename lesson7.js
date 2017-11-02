@@ -3,12 +3,16 @@ var people = [
     { name: "John", age: 55 },
     { name: "Roger", age: 44 },
     { name: "Betty", age: 37 }
-    ]
+    ];
 
 
 for (var i = 0; i < people.length; i++) {
-    let name = people[i].name
-    if (name == "John") {
+    let name = people[i].name;
+    if (name === "John") {
+        people[i].name.pop;
+        people[i].age.pop;
+    }
+    else {
         console.log("My Name is " + name)
     }
 }

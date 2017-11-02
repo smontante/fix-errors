@@ -8,13 +8,16 @@ var people = [
     { name: "John", age: 55 },
     { name: "Roger", age: 44 },
     { name: "Betty", age: 37 }
-    ]
+    ];
 
-var nameFilter = function(name) {
-    let name = "Eric"
+var nameFilter = function(a) {
     for (let i = 0; i < people.length; i++) {
         let name = people[i].name
-        if (name != filteredName) {
+        if (a === name) {
+            people[i].name.pop;
+            people[i].age.pop;
+        }
+        else {
             console.log("My Name is " + name)
         }
     }
